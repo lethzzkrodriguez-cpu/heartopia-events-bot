@@ -1,13 +1,24 @@
 import os
+import threading
+from flask import Flask
 import discord
 from discord.ext import commands
 
-intents = discord.Intents.default()
+app = Flask(__name__)
 
-bot = commands.Bot(
-    command_prefix="!",
-    intents=intents
-)
+@app.route("/")
+def home():
+    return "Heartopia Events Bot está online! 💜"
+
+def run_web():
+    app.run(host="0.0.0.0", port=10000)
+
+threading.Thread(target=run_web).start()
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
