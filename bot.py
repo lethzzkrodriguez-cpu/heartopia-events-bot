@@ -27,9 +27,6 @@ async def on_ready():
 @bot.command()
 async def teste(ctx):
     await ctx.send("🌷 Oii! Meu bot está funcionando! 💜")
-@bot.command()
-async def teste(ctx):
-    await ctx.send("🌷 Oii! Meu bot está funcionando! 💜")
 
 @bot.command()
 async def ajuda(ctx):
