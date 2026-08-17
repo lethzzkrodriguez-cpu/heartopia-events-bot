@@ -51,4 +51,11 @@ async def avisar(ctx, *, mensagem):
         f"{mensagem}\n\n"
         f"💜 Fiquem atentos aos eventos!"
     )
+@bot.command()
+async def agendar(ctx, horario, *, evento):
+    await ctx.send(
+        f"⏰ **Evento agendado!** 🌷\n\n"
+        f"🌠 {evento}\n"
+        f"🕐 Horário: {horario}"
+    )
 bot.run(os.getenv("DISCORD_TOKEN"))
