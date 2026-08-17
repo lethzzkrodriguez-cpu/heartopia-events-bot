@@ -36,4 +36,12 @@ async def ajuda(ctx):
         "📅 `!eventos` — Mostra os eventos disponíveis.\n"
         "🌸 `!ajuda` — Mostra este menu."
     )
+    @bot.command()
+async def eventos(ctx):
+    await ctx.send(
+        "🌷 **Eventos do Heartopia** 💜\n\n"
+        "🌠 Chuva de Meteoros — evento especial\n"
+        "🎣 Evento de Pesca — fique de olho nos avisos!\n"
+        "🎁 Eventos especiais — em breve!"
+    )
 bot.run(os.getenv("DISCORD_TOKEN"))
