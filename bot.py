@@ -27,8 +27,10 @@ async def on_ready():
 @bot.command()
 async def teste(ctx):
     await ctx.send("🌷 Oii! Meu bot está funcionando! 💜")
+@bot.command()
+async def teste(ctx):
+    await ctx.send("🌷 Oii! Meu bot está funcionando! 💜")
 
-bot.run(os.getenv("DISCORD_TOKEN"))
 @bot.command()
 async def ajuda(ctx):
     await ctx.send(
@@ -37,3 +39,4 @@ async def ajuda(ctx):
         "📅 `!eventos` — Mostra os eventos disponíveis.\n"
         "🌸 `!ajuda` — Mostra este menu."
     )
+bot.run(os.getenv("DISCORD_TOKEN"))
