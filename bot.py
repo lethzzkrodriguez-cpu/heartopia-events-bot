@@ -44,4 +44,11 @@ async def eventos(ctx):
         "🎣 Evento de Pesca — fique de olho nos avisos!\n"
         "🎁 Eventos especiais — em breve!"
     )
+@bot.command()
+async def avisar(ctx, *, mensagem):
+    await ctx.send(
+        f"🔔 **AVISO DE HEARTOPIA** 🌷\n\n"
+        f"{mensagem}\n\n"
+        f"💜 Fiquem atentos aos eventos!"
+    )
 bot.run(os.getenv("DISCORD_TOKEN"))
