@@ -44,14 +44,14 @@ async def eventos(ctx):
         "🎣 Evento de Pesca — fique de olho nos avisos!\n"
         "🎁 Eventos especiais — em breve!"
     )
-@bot.command()
+    @bot.command()
 async def avisar(ctx, *, mensagem):
     embed = discord.Embed(
         title="🔔 AVISO DE HEARTOPIA 🌷",
         description=mensagem
     )
-  embed.set_image(url=https:"//cdn.discordapp.com/attachments/1535192402078339074/1539134364070187078/92266a9348800f71af20012b9ec61593.jpg?ex=6a853614&is=6a83e494&hm=bcb813a20314c4ff8ca9e17539d5e7a675bce1a57ccf6ce9c4a3768d7890f242&")
-  embed.set_footer(text="💜 Heartopia Events")
+    embed.set_image(url="https://cdn.discordapp.com/attachments/1535192402078339074/1539134364070187078/92266a9348800f71af20012b9ec61593.jpg?ex=6a853614&is=6a83e494&hm=bcb813a20314c4ff8ca9e17539d5e7a675bce1a57ccf6ce9c4a3768d7890f242&")
+    embed.set_footer(text="💜 Heartopia Events")
     await ctx.send(embed=embed)
 @bot.command()
 async def agendar(ctx, horario, *, evento):
