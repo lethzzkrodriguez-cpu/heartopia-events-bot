@@ -44,7 +44,7 @@ async def eventos(ctx):
         "🎣 Evento de Pesca — fique de olho nos avisos!\n"
         "🎁 Eventos especiais — em breve!"
     )
-    @bot.command()
+@bot.command()
 async def avisar(ctx, *, mensagem):
     embed = discord.Embed(
         title="🔔 AVISO DE HEARTOPIA 🌷",
